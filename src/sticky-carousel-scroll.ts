@@ -73,6 +73,7 @@ const initStickyCarouselScroll = () => {
           if (isCurrentSlide) {
             gsap.to(slideCard, { scale: 1, x: 0, ease: "back", duration: 0.7 });
             gsap.to(childAnimationElementsArr, childElementsAnimationRevealState);
+            slideCard.classList.remove("is-deactive");
           } else {
             const isLeftSide = i < currIndex;
 
@@ -144,6 +145,7 @@ const initStickyCarouselScroll = () => {
               duration: 0.7,
             });
             gsap.to(childAnimationElementsArr, childElementsAnimationHiddenState);
+            slideCard.classList.add("is-deactive");
           }
         }
       };
