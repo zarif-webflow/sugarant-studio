@@ -1,6 +1,6 @@
 {
-  "name": "peak21",
-  "description": "peak21 webflow website javascript scripts",
+  "name": "Sugarant Studio Webflow Scripts",
+  "description": "Sugarant Studio webflow website javascript scripts",
   "license": "ISC",
   "keywords": [],
   "type": "module",
@@ -48,5 +48,5 @@
   "engines": {
     "pnpm": ">=10"
   },
-  "version": "1.0.1"
+  "version": "1.0.0"
 }
