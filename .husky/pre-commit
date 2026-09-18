@@ -1,0 +1,10 @@
+# Run build
+echo "🔨  Running pnpm build…"
+pnpm build || {
+  echo "❌  Build failed. Commit aborted."
+  exit 1
+}
+
+git add dist
+
+echo "✅  Build succeeded and dist/ staged, proceeding with commit."
